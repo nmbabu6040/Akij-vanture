@@ -1,0 +1,84 @@
+/* XS device responsive max 320px */
+@media (max-width: 320px) {
+  .vdoCont h4,
+  .chairmanCont h3,
+  .mdPart h3,
+  .mapHead h4,
+  .cereerHead h4,
+  .regForm h5,
+  .cereerCont h4,
+  .newsHead h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .newsContent p,
+  .mdPart p,
+  .cereerCont p,
+  .brandItem p,
+  .vdoCont p {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+  .tags {
+    flex-direction: column;
+  }
+
+  .countryWise {
+    text-align: center;
+  }
+
+  .fixedBtn {
+    display: none;
+  }
+}
+
+/* SM device responsive min 320.1px to 576px  */
+@media (min-width: 320.1px) and (max-width: 576px) {
+  .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tags button {
+    display: inline-block;
+  }
+
+  .countryWise {
+    text-align: center;
+  }
+
+  .ftPolicy {
+    display: flex;
+    justify-content: center !important;
+  }
+  .fixedBtn {
+    display: none;
+  }
+}
+
+/* MD Device responsive 576.1px to 768px  */
+@media (min-width: 576.1px) and (max-width: 768px) {
+  .mdPart h3,
+  .cereerCont h4,
+  .chairmanCont h3 {
+    font-size: 28px;
+  }
+  .mdPart p,
+  .cereerCont p,
+  .chairmanCont p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+
+/* LG device responsive min 768.1px to 992px  */
+@media (min-width: 768.1px) and (max-width: 992px) {
+  .navBtn .regBtn,
+  .navBtn .login {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}

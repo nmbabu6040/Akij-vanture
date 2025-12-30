@@ -61,8 +61,8 @@ select {
 }
 
 body {
-  font-family: 'Hind Siliguri', sans-serif;
-  font-family: 'Inter', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
   width: 100%;
 }
@@ -81,18 +81,16 @@ html {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
   border: 10px solid #077d2d;
-  border-top-color: transparent; /* সুন্দর spinner effect */
-  background: #fff;
-  z-index: 9999;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transform: translate(-50%, -50%);
-  animation: spin 1.5s linear infinite;
-
+  background: #fff;
+  /* transform: translate(-50%, -50%); */
+  z-index: 9999;
+  animation: spin 2s linear infinite;
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
@@ -120,10 +118,10 @@ html {
   line-height: 19px;
   font-weight: 400;
   text-transform: capitalize;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: inline-block;
   padding: 4px 8px;
-  margin: 0 10px;
+  margin: 0 7px;
   transition: all linear 0.4s;
   cursor: pointer;
   color: #000;
@@ -132,7 +130,7 @@ html {
 
 .menuBar .navbar-nav .nav-item .nav-link::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 0;
@@ -144,7 +142,7 @@ html {
 
 .menuBar .navbar-nav .nav-item .nav-link::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   right: 0;
   width: 0;
@@ -165,7 +163,7 @@ html {
 
 .navBtn .login {
   display: inline-block;
-  padding: 6px 15px;
+  padding: 5px 15px;
   border-radius: 40px;
   background: transparent;
   border: 1px solid #00954d;
@@ -173,7 +171,7 @@ html {
   font-size: 15px;
   font-weight: 400;
   text-transform: capitalize;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: all linear 0.4s;
 }
@@ -185,7 +183,7 @@ html {
 
 .navBtn .regBtn {
   display: inline-block;
-  padding: 6px 15px;
+  padding: 5px 15px;
   border-radius: 40px;
   background: #00954d;
   border: 1px solid #00954d;
@@ -193,7 +191,7 @@ html {
   font-size: 15px;
   font-weight: 400;
   text-transform: capitalize;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: all linear 0.4s;
 }
@@ -211,7 +209,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 
@@ -221,7 +219,7 @@ html {
   line-height: 48px;
   font-weight: 600;
   text-transform: capitalize;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .newsImage {
@@ -235,6 +233,7 @@ html {
   object-fit: cover;
   width: 100%;
   transition: all linear 0.4s;
+  margin-bottom: 20px;
 }
 
 .newsImage:hover img {
@@ -243,20 +242,20 @@ html {
 
 .newsContent h5 {
   color: #15803d;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 600;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-transform: capitalize;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .newsContent h3 {
-  font-size: 29px;
-  line-height: 43px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  text-transform: capitalize !important;
+  font-family: "Inter", sans-serif;
   color: #000000de;
   margin-bottom: 10px;
 }
@@ -265,7 +264,7 @@ html {
   display: inline-block;
   color: #00954d;
   font-weight: 600;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -273,7 +272,7 @@ html {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000000de;
   margin-bottom: 10px;
 }
@@ -288,7 +287,7 @@ html {
   font-size: 15px;
   text-transform: capitalize;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   transition: all linear 0.4s;
   cursor: pointer;
 }
@@ -312,12 +311,16 @@ html {
   line-height: 40px;
   display: inline-block;
 }
+
+.videoPart iframe {
+  min-height: 400px;
+}
 .vdoCont h4 {
   color: #2d3748;
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -326,7 +329,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 10px;
 }
 .vdoCont ul {
@@ -341,7 +344,7 @@ html {
   margin-bottom: 10px;
   margin-left: 20px;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .tags button {
@@ -353,7 +356,7 @@ html {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* newsPart end  */
@@ -394,7 +397,7 @@ html {
 
 .corporatItem::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -421,7 +424,7 @@ html {
 
 /* brandPart start  */
 .brandPart {
-  padding: 20px 80px;
+  padding: 20px 0px;
   background: #fff;
 }
 
@@ -520,7 +523,7 @@ html {
 }
 
 .aboutImage::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0px;
   border-radius: 50%;
